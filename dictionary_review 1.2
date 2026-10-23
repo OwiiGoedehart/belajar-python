@@ -1,0 +1,13 @@
+barang = {
+    "A01" : {"nama" : "buku", "harga" : 5000},
+    "A02" : {"nama" : "pensil", "harga" : 2000},
+    "A03" : {"nama" : "penghapus", "harga" : 1000}
+
+}
+
+jumlah = 0
+for value in barang:
+    if barang[value]["harga"] >= 2000:
+        jumlah += 1
+
+print("jumlah seluruh barang:", jumlah)

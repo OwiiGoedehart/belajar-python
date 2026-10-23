@@ -1,0 +1,20 @@
+password =""
+percobaan = 0
+
+login_berhasil = False
+
+while password != "judenverboden" and percobaan <3:
+    password = input("Masukkan password:")   
+
+    if password != "judenverboden":
+        print("password salah!")
+        percobaan += 1
+
+if password == "judenverboden":
+    login_berhasil = True
+    print("wilkommen!")
+elif percobaan == 3:
+    print("Fehler! sie haben keine versuche mehr!")
+
+if not login_berhasil:
+    print("Zugriff verweigert!")

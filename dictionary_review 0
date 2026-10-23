@@ -1,0 +1,11 @@
+barang = {
+    "A01": {"nama": "buku", "harga": 5000},
+    "A02": {"nama": "pensil", "harga": 2000},
+    "A03": {"nama": "penghapus", "harga": 1000}
+}
+
+
+for value in barang:
+   
+    print("Barang:", barang[value]["nama"], "| Harga: Rp", barang[value]["harga"])
+

@@ -1,0 +1,12 @@
+barang = {
+    "A01" : {"nama" : "buku", "harga" : 5000},
+    "A02" : {"nama" : "pensil", "harga" : 2000},
+    "A03" : {"nama" : "penghapus", "harga" : 1000}
+
+}
+
+total = 0
+for value in barang:
+    total = total + barang[value]["harga"]
+
+print("Total harga semua barang: Rp", total)

@@ -1,0 +1,9 @@
+password_benar = "python234"
+password = input("masukkan password: ").lower()
+
+if password == "":
+    print("password tidak boleh kosong!")
+elif password == password_benar:
+    print("login berhasil!")
+else:
+    print("password salah!")

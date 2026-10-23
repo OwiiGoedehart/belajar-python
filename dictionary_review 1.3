@@ -1,0 +1,12 @@
+barang = {
+    "A01": {"nama": "Pensil", "harga": 2000, "stok": 5},
+    "A02": {"nama": "Buku", "harga": 5000, "stok": 3},
+    "A03": {"nama": "Penghapus", "harga": 1000, "stok": 8}
+}
+
+for key, value in barang.items():
+    print("Kode Barang:", key)
+    print("Nama Barang:", value["nama"])
+    print("Harga Barang: Rp", value["harga"])
+    print("Stok Barang:", value["stok"])
+    print("-------------------------")

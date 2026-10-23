@@ -1,0 +1,16 @@
+word_count = {
+    "python" : 4,
+    "java" : 7,
+    "rust" : 2
+}
+
+highest = 0
+highest_word = ""
+
+for key, value in word_count.items():
+    if value > highest:
+        highest = value
+        highest_word = key
+
+print(f"kata terbanyak : {highest_word}")
+print(f"jumlah kemunculan : {highest}")
