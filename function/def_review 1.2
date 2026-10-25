@@ -1,0 +1,11 @@
+def hitung_total (harga, jumlah):
+    total = harga * jumlah
+   
+    if total >= 50000:
+        total = total - (total * 0.1)
+    else:
+        total = total
+    
+    return total
+
+print(f"total harga : {hitung_total(15000, 4)}")
