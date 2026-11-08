@@ -1,0 +1,13 @@
+import socket
+
+my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+my_socket.bind(("127.0.0.1", 5000))
+my_socket.listen()
+
+print("Server is listening...")
+print("Waiting for a connection...")
+
+conn, addr = my_socket.accept()
+
+print(f"connected by {addr}")

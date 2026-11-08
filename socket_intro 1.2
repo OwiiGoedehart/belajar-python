@@ -1,0 +1,12 @@
+import socket
+
+my_socket = socket.socket(
+    socket.AF_INET,
+    socket.SOCK_DGRAM
+)
+
+print("Socket created!")
+print("Socket type:", my_socket.type)
+print("Socket family:", my_socket.family)
+
+my_socket.close()
