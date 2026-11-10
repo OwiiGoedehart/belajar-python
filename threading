@@ -1,0 +1,7 @@
+import threading
+
+def handle_client():
+    print("Client handler is running...")
+    
+thread = threading.Thread(target=handle_client)
+thread.start()
